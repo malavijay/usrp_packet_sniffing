@@ -1,0 +1,5 @@
+capturing mouse activity:
+sudo  python uhd_rx_cfile --freq=2450.5M --samp-rate=50e6 -g 50 -N 1.6e6 mouse2.cfile --wire-format=sc8
+decoding packets using btrx:
+ sudo python btrx -f 2450.5M --samp-rate=50e6 -i mouse2.cfile -S 
+
